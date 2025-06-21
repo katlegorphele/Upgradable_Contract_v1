@@ -16,11 +16,12 @@ module.exports = {
       url: "http://127.0.0.1:8545/", // local Hardhat node
     },
     hardhat: {
-      chainId: 31337, // needed for some forks and tools
+      chainId: 421614, // needed for some forks and tools
     },
     arb: {
       url: process.env.RPC_URL || "", // Arbitrum RPC URL from .env
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: 421614,
     },
   },
   etherscan: {
